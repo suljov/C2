@@ -9,6 +9,12 @@ A command and control server is used as an interface to upload and control vario
   - [Metasploit](#Metasploit)
   - [Armitage](#Armitage)
   - [Powershell Empire and Starkiller](#Powershell-Empire-and-Starkiller)
+    - [Installing Starkiller](#Installing-Starkiller)
+    - [Installing Empire](#Installing-Empire)
+    - [Setting Up Starkiller](#Setting-Up-Starkiller)
+    - [Uploading a C2 agent with Starkiller](#Uploading-a-C2-agent-with-Starkiller)
+    - [Creating our Listener](#Creating-our-Listener)
+    - [Generating the Stager](#Generating-the-Stager)
   - [Covenant](#Covenant)
   - [Sliver](#Sliver)
 
