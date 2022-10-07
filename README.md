@@ -128,12 +128,82 @@ Starkiller uses a listener and a stager to create an agent the listener does exa
 
 
 
-### Covenant
+## Covenant
 
-### Sliver 
+## Sliver 
 
-### Paid C2 Frameworks
+## Havoc
 
-### Cobalt Strike
+### installing 
+If you get an error that Python.h isn't found when building, you need to make sure Python 3.10 is installed and you have the Python 3.10 development files. If you are using Ubuntu LTS you may need to leverage a PPA such as deadsnakes to get a newer version of Python.
+```
+sudo apt install build-essential
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+sudo apt install python3.10 python3.10-dev
+```
 
-### Brute Ratel
+##### Pre-requisites
+The immediate following is for Debian based Distros only.
+```
+sudo apt install -y git build-essential apt-utils cmake libfontconfig1 libglu1-mesa-dev libgtest-dev libspdlog-dev libboost-all-dev libncurses5-dev libgdbm-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev libbz2-dev mesa-common-dev qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5websockets5 libqt5websockets5-dev qtdeclarative5-dev golang-go qtbase5-dev libqt5websockets5-dev libspdlog-dev python3-dev libboost-all-dev mingw-w64 nasm
+```
+
+#### Building the Client
+
+
+If you are using a debian-based distro, you can use the bundled installation script at 
+```
+/Havoc/Client/Install.sh.
+```
+
+Clone the repository:
+```
+git clone https://github.com/HavocFramework/Havoc.git
+```
+
+Build and Run:
+```
+cd Havoc/Client
+make 
+./Havoc 
+```
+Running Havoc will start the Client.
+
+#### Building the Teamserver
+If you are using a debian-based distro, you can use the bundled installation script at /Havoc/Teamserver/Install.sh
+
+Install additional Go dependencies:
+```
+cd Havoc/Teamserver
+
+go mod download golang.org/x/sys  
+go mod download github.com/ugorji/go
+```
+
+Build and Run:
+```
+cd Havoc/Teamserver
+make
+./teamserver -h
+```
+
+#### Teamserver
+The Havoc Teamserver is written in Golang. It handles the listeners, teamserver authentication and payload generation. It also supports ExternalC2 functionality through the configuration of Service endpoints.
+
+#### Starting the Teamserver
+A script is included to automatically start the Teamserver using some default options: Havoc/Teamserver/teamserver
+
+Running ./teamserver will automatically build the Teamserver, set it as executable and start it with the following options:
+```
+./bin/teamserver server --profile profiles/havoc.yaotl -v
+```
+
+
+
+
+# Paid C2 Frameworks
+
+## Cobalt Strike
+
+## Brute Ratel
