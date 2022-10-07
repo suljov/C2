@@ -17,6 +17,7 @@ A command and control server is used as an interface to upload and control vario
     - [Generating the Stager](#Generating-the-Stager)
   - [Covenant](#Covenant)
   - [Sliver](#Sliver)
+  - [Havoc](#Havoc)
 
 - [Paid C2 Frameworks](#Paid-C2-Frameworks)
   - [Cobalt Strike](#Cobalt-Strike)
