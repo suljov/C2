@@ -200,8 +200,16 @@ Running ./teamserver will automatically build the Teamserver, set it as executab
 ./bin/teamserver server --profile profiles/havoc.yaotl -v
 ```
 
+OBS
 
+the first profile generated will have an ip wich is wrong.
+you can go in an change the ip to your box or interface
+```
+/Havoc/Teamserver/profiles/havoc.yaotl
+```
+and change the host part in the start.
 
+plus you can also change the password etc.
 
 # Paid C2 Frameworks
 
