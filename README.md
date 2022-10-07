@@ -209,7 +209,7 @@ you can go in an change the ip to your box or interface
 ```
 and change the host part in the start.
 
-plus you can also change the password etc.
+plus you can also change the password and users etc.
 
 # Paid C2 Frameworks
 
