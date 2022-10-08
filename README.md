@@ -31,7 +31,34 @@ A command and control server is used as an interface to upload and control vario
 ## Metasploit
 
 ## Armitage
+```
+https://www.kali.org/tools/armitage/
+```
+### installing
+install armitage with:
+```
+sudo apt install armitage
+```
 
+### starting armitage
+first start the teamserver:
+```
+teamserver <your ip you want to use> <teamserver password>
+```
+and by default its on port 55553.
+
+### starting armitage
+
+you should have an launcher by now
+
+but starting it manualy you can use this:
+```
+sh -c "pkexec msfdb init && armitage"
+```
+alos just using this:
+```
+armitage.
+```
 ## Powershell Empire and Starkiller
 
 #### Installing Starkiller 
