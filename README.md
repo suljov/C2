@@ -53,11 +53,11 @@ you should have an launcher by now
 
 but starting it manualy you can use this:
 ```
-sh -c "pkexec msfdb init && armitage"
+armitage
 ```
 alos just using this:
 ```
-armitage.
+sh -c "pkexec msfdb init && armitage"
 ```
 ## Powershell Empire and Starkiller
 
